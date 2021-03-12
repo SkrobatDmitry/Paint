@@ -57,4 +57,528 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=5.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing.Primitives" name="System.Drawing.Primitives, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>92, 12</value>
+  </data>
+  <data name="pictureBox.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>1160, 650</value>
+  </data>
+  <assembly alias="System.Private.CoreLib" name="System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
+  <data name="pictureBox.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBox.Name" xml:space="preserve">
+    <value>pictureBox</value>
+  </data>
+  <data name="&gt;&gt;pictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=5.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="CornersNumLabel.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=5.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+  <data name="CornersNumLabel.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI Light, 7.8pt</value>
+  </data>
+  <data name="CornersNumLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CornersNumLabel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>-1, 576</value>
+  </data>
+  <data name="CornersNumLabel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>81, 17</value>
+  </data>
+  <data name="CornersNumLabel.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>12</value>
+  </data>
+  <data name="CornersNumLabel.Text" xml:space="preserve">
+    <value>Corners Num</value>
+  </data>
+  <data name="&gt;&gt;CornersNumLabel.Name" xml:space="preserve">
+    <value>CornersNumLabel</value>
+  </data>
+  <data name="&gt;&gt;CornersNumLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CornersNumLabel.Parent" xml:space="preserve">
+    <value>ControlPanel</value>
+  </data>
+  <data name="&gt;&gt;CornersNumLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PenWidthLabel.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="PenWidthLabel.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI Light, 7.8pt</value>
+  </data>
+  <data name="PenWidthLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PenWidthLabel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>8, 520</value>
+  </data>
+  <data name="PenWidthLabel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>65, 17</value>
+  </data>
+  <data name="PenWidthLabel.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>11</value>
+  </data>
+  <data name="PenWidthLabel.Text" xml:space="preserve">
+    <value>Pen Width</value>
+  </data>
+  <data name="&gt;&gt;PenWidthLabel.Name" xml:space="preserve">
+    <value>PenWidthLabel</value>
+  </data>
+  <data name="&gt;&gt;PenWidthLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PenWidthLabel.Parent" xml:space="preserve">
+    <value>ControlPanel</value>
+  </data>
+  <data name="&gt;&gt;PenWidthLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="CornersNumBox.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>15, 550</value>
+  </data>
+  <data name="CornersNumBox.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>50, 23</value>
+  </data>
+  <data name="CornersNumBox.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;CornersNumBox.Name" xml:space="preserve">
+    <value>CornersNumBox</value>
+  </data>
+  <data name="&gt;&gt;CornersNumBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=5.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CornersNumBox.Parent" xml:space="preserve">
+    <value>ControlPanel</value>
+  </data>
+  <data name="&gt;&gt;CornersNumBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="PenSizeBox.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>15, 495</value>
+  </data>
+  <data name="PenSizeBox.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>50, 23</value>
+  </data>
+  <data name="PenSizeBox.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;PenSizeBox.Name" xml:space="preserve">
+    <value>PenSizeBox</value>
+  </data>
+  <data name="&gt;&gt;PenSizeBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=5.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PenSizeBox.Parent" xml:space="preserve">
+    <value>ControlPanel</value>
+  </data>
+  <data name="&gt;&gt;PenSizeBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="SecondColorLabel.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="SecondColorLabel.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI Light, 7.8pt</value>
+  </data>
+  <data name="SecondColorLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SecondColorLabel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>-1, 457</value>
+  </data>
+  <data name="SecondColorLabel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>81, 17</value>
+  </data>
+  <data name="SecondColorLabel.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>8</value>
+  </data>
+  <data name="SecondColorLabel.Text" xml:space="preserve">
+    <value>Second Color</value>
+  </data>
+  <data name="&gt;&gt;SecondColorLabel.Name" xml:space="preserve">
+    <value>SecondColorLabel</value>
+  </data>
+  <data name="&gt;&gt;SecondColorLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SecondColorLabel.Parent" xml:space="preserve">
+    <value>ControlPanel</value>
+  </data>
+  <data name="&gt;&gt;SecondColorLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="FirstColorLabel.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="FirstColorLabel.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI Light, 7.8pt</value>
+  </data>
+  <data name="FirstColorLabel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>11, 377</value>
+  </data>
+  <data name="FirstColorLabel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>63, 17</value>
+  </data>
+  <data name="FirstColorLabel.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>7</value>
+  </data>
+  <data name="FirstColorLabel.Text" xml:space="preserve">
+    <value>First Color</value>
+  </data>
+  <data name="&gt;&gt;FirstColorLabel.Name" xml:space="preserve">
+    <value>FirstColorLabel</value>
+  </data>
+  <data name="&gt;&gt;FirstColorLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FirstColorLabel.Parent" xml:space="preserve">
+    <value>ControlPanel</value>
+  </data>
+  <data name="&gt;&gt;FirstColorLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="SecondColorButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="SecondColorButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SecondColorButton.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>15, 405</value>
+  </data>
+  <data name="SecondColorButton.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>50, 50</value>
+  </data>
+  <data name="SecondColorButton.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;SecondColorButton.Name" xml:space="preserve">
+    <value>SecondColorButton</value>
+  </data>
+  <data name="&gt;&gt;SecondColorButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SecondColorButton.Parent" xml:space="preserve">
+    <value>ControlPanel</value>
+  </data>
+  <data name="&gt;&gt;SecondColorButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="FirstColorButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="FirstColorButton.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>15, 325</value>
+  </data>
+  <data name="FirstColorButton.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>50, 50</value>
+  </data>
+  <data name="FirstColorButton.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;FirstColorButton.Name" xml:space="preserve">
+    <value>FirstColorButton</value>
+  </data>
+  <data name="&gt;&gt;FirstColorButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FirstColorButton.Parent" xml:space="preserve">
+    <value>ControlPanel</value>
+  </data>
+  <data name="&gt;&gt;FirstColorButton.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="BrokenLineButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="BrokenLineButton.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
+        EAAAjBIAAP1NAACBPgAAWesAARIPAAA85gAAGc66ySIyAAABJmlDQ1BBZG9iZSBSR0IgKDE5OTgpAAAo
+        z2NgYDJwdHFyZRJgYMjNKykKcndSiIiMUmA/z8DGwMwABonJxQWOAQE+IHZefl4qAwb4do2BEURf1gWZ
+        xUAa4EouKCoB0n+A2CgltTiZgYHRAMjOLi8pAIozzgGyRZKywewNIHZRSJAzkH0EyOZLh7CvgNhJEPYT
+        ELsI6Akg+wtIfTqYzcQBNgfClgGxS1IrQPYyOOcXVBZlpmeUKBhaWloqOKbkJ6UqBFcWl6TmFit45iXn
+        FxXkFyWWpKYA1ULcBwaCEIWgENMAarTQZKAyAMUDhPU5EBy+jGJnEGIIkFxaVAZlMjIZE+YjzJgjwcDg
+        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsMAAALDAE/QCLI
+        AAACq0lEQVRYR+2X30tTYRyHu23LprVChawu6qqfNy4lSJpdVOiIRNRSFMOKWqRCCRlJiyS0EgtckaCk
+        mZllWIuWpZLV6MdF0EXQRUER+V/0wOIg3+XOeY87Z10ceBh7388O78P3/XHeLXoZm/0PcbRUcLRUcLRU
+        cLRUSINWdOZn57UR0SlIg9aRE22LXe6K6qDon4vdWkNjHzOzvGhd7RkT0Vzs1iryl+K0u6RS9Ats1Wq/
+        MoiTd0X2aOSziAT2aT2d/r567Xq0Gls6RJSIfVo19c04bdjsm3jzS0SJ2KTVP/w6Y6nH5c4I90VF9E/s
+        0Hrx9nd+oZ9SlVU0iGg+7NA6G7qBU05u3vjEVxHNh+VaqCCEVmsoLKIkWK7FxOGUX7CTqRRREqzVCvc/
+        Z5mz2PuGZ0SUHPNaz179uNR1t7Im2H1zXERxOAg2bvFRqur6ZhHpYl6rruE0Q4LLvSSwv/ZR9Iv4QVNL
+        J2nemnWRqW8i0sWkVu+d6fg5tK/8kCdzGcNn5646c75HW0C8Xrwrc+i/eHlAe8o4ZrS02SmvOkrz9v1Y
+        wfZdNIEvNOncU1pFc4e/RHtKCTNaxxpDDMnsPJn8OzsUiVJRMPopXqCsjpnlAjP08IP2lBLKWgOj7zxZ
+        yxm+o/ueiFheLDKESOFw8Jz4gXHUtLTXyN7AQRFpsDHZnkizVUVkHDWtU61dOHFqJ+671KKgNfL4Ezc4
+        tNrae0WUchS0iooDOPEp+q3AqBYVwolqUTMRWYEhLVZS/BbA2hKRRRjSYt/h5CssVroFLAR9LbY6TpxV
+        gw/ei8g6dLQ4xznN0TredEFElqKjxVsPp01btxn5u5JCkmldvxWJX+K4L4jIapJpHag9Sam4V4l+G9CZ
+        RO6fC3m1mUZHK104Wio4Wio4Wio4WsaJzf4BXJTeer/AtuwAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="BrokenLineButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BrokenLineButton.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>15, 255</value>
+  </data>
+  <data name="BrokenLineButton.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>50, 50</value>
+  </data>
+  <data name="BrokenLineButton.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;BrokenLineButton.Name" xml:space="preserve">
+    <value>BrokenLineButton</value>
+  </data>
+  <data name="&gt;&gt;BrokenLineButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BrokenLineButton.Parent" xml:space="preserve">
+    <value>ControlPanel</value>
+  </data>
+  <data name="&gt;&gt;BrokenLineButton.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="PolygonButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="PolygonButton.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
+        EAAAjBIAAP1NAACBPgAAWesAARIPAAA85gAAGc66ySIyAAABJmlDQ1BBZG9iZSBSR0IgKDE5OTgpAAAo
+        z2NgYDJwdHFyZRJgYMjNKykKcndSiIiMUmA/z8DGwMwABonJxQWOAQE+IHZefl4qAwb4do2BEURf1gWZ
+        xUAa4EouKCoB0n+A2CgltTiZgYHRAMjOLi8pAIozzgGyRZKywewNIHZRSJAzkH0EyOZLh7CvgNhJEPYT
+        ELsI6Akg+wtIfTqYzcQBNgfClgGxS1IrQPYyOOcXVBZlpmeUKBhaWloqOKbkJ6UqBFcWl6TmFit45iXn
+        FxXkFyWWpKYA1ULcBwaCEIWgENMAarTQZKAyAMUDhPU5EBy+jGJnEGIIkFxaVAZlMjIZE+YjzJgjwcDg
+        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsMAAALDAE/QCLI
+        AAACFklEQVRYR+3XS08aURTAcbe1e9F9H4DCwDCIBakYSTRtUr9WTW0rYgEZMxQRBXm29qFJ7aLd+CFc
+        tSs+AW/ao3dCJpcAc+7MgpB78t/BnPtb3jvz86Y2gXEWJs7CxFmYOAvTVLNevz8T3M98/vB+8oL6iS2j
+        rJ29HIAk73K5XDnOZJYcjmX/RiTxifobNnZWH1SpVHu93r/7abfbJ9msUxC8K+t7iSr1if5YWDuR/CBI
+        O4DLnp4Kgkvyhd7FKtTnesKxxoK00+l0znI5l8st+dbefihRq0anl4UCaafb7ebz56LoEb3B3YMitXZY
+        41l3INHPANIO4AqFouiR3FLwzf45dcRgo1iXv/4YB2kHcMViCRa6PAHqLKpRrIvrW4tlHnapW00aWPhg
+        9iF1FtU41vyCuszU4SzMcBZmOAsznIUZzsLMlLLm5ixwm1OXmTT1et0Q6+r3X7iSw90XbsBwD1a3GhgA
+        xeOJR4+fhMLb1FlUo1gkeMbAY8bhdMLbgRmnBcmZa+qIwcazSJHDz/AMhPcWvLpQuEajoYI2XukBkfSy
+        SFH5y0ogbF9c+phOt1ot9eQhwwYi4VikqPzVH9y02RdTqVSz2VQVmjECIrGwSAdH3wLPt6w2u6IofZwW
+        lDxmAZHYWaSY8n019OKp1SbLsikgklEWKaZcBkMvAXSY/kH9xJY5LNPjLEychYmzMHEWpolk3dT+Axrf
+        LxP8auM4AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="PolygonButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PolygonButton.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>15, 195</value>
+  </data>
+  <data name="PolygonButton.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>50, 50</value>
+  </data>
+  <data name="PolygonButton.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;PolygonButton.Name" xml:space="preserve">
+    <value>PolygonButton</value>
+  </data>
+  <data name="&gt;&gt;PolygonButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PolygonButton.Parent" xml:space="preserve">
+    <value>ControlPanel</value>
+  </data>
+  <data name="&gt;&gt;PolygonButton.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="EllipseButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="EllipseButton.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
+        EAAAjBIAAP1NAACBPgAAWesAARIPAAA85gAAGc66ySIyAAABJmlDQ1BBZG9iZSBSR0IgKDE5OTgpAAAo
+        z2NgYDJwdHFyZRJgYMjNKykKcndSiIiMUmA/z8DGwMwABonJxQWOAQE+IHZefl4qAwb4do2BEURf1gWZ
+        xUAa4EouKCoB0n+A2CgltTiZgYHRAMjOLi8pAIozzgGyRZKywewNIHZRSJAzkH0EyOZLh7CvgNhJEPYT
+        ELsI6Akg+wtIfTqYzcQBNgfClgGxS1IrQPYyOOcXVBZlpmeUKBhaWloqOKbkJ6UqBFcWl6TmFit45iXn
+        FxXkFyWWpKYA1ULcBwaCEIWgENMAarTQZKAyAMUDhPU5EBy+jGJnEGIIkFxaVAZlMjIZE+YjzJgjwcDg
+        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsOAAALDgFAvuFB
+        AAACk0lEQVRYR+2Yz24SURTGfYFSXSnQVt3ZGsFqdWW7qUBqrQuj1VRXmsCgT6Crrqwb4QV0qw/grmnc
+        dAQSeIKCOzWZwEpc4Ep/aW9YnAr3XmYmGc18+Rbz59zvfMA59w8nPjW8CDK2ZcPYlg1jWzaMbdnwv7O1
+        6357Xf3w4PHzxaXlZPpsYvoU5IJbHvKKADHEnJPY+rjXflp+mUzP5fL5N5VKrVb3PO/XIbjgloe8OpOa
+        JYxgMdyE1ra2X71Nz54vFksHB+3fY9Fud0olh2CGCBEtLWzt1b7fe1i8lMk0m02V2QAEX5hfYCDDheAY
+        mtpCdLVwd2Pjzo9+XyU0RrfbvZnLMdzcmamtza0y5UL1qFSWYODa2q37W46QHUUjW9s77/gh+NAqyUTg
+        a85ks0gJ8b9Sb4tWSs2cs6qnUUAEKZPe1NuiyWkoJewbjlNGUKQ4To2tXfcr81On80Wp+gZSCCIrEglq
+        bDFZ5wsFJRkQEERWJBLU2Np89IwpW+kFBATpa5FIUGPr6vUV1/2s9ALC/r575dqySCSoscW6xjKn9AIC
+        gsiKRIIaW1OJk4PBQOkFBKZWZEUiwX/TVkR/RGoz8JJH0G/JR3SCCGk63am+F4kENbZYJU4nZyK3+EBW
+        VtZXpeobwSzVMMCNTavVSge1sYHs3eYXLvrfBmazlw2PG0a2IPtdn5vm9fXbAW+a4fCI0e//VKmM0ev1
+        wjpiQEQ5V7Efp0RUQgMQTAGEdSAbkuKgA9hGczpVmUeAAPqO4HCPr0PSSk+cF8xnVFulWq3XGyxzVA/g
+        glse8ooAwkz67jgnsXXEo79GWJ0Wl24kU3NTiWnIBbc8PPxrRDNnjuHktkJlbMuGsS0bxrZsGNuyYSRt
+        Nbw/zsxF9V6AIngAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="EllipseButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="EllipseButton.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>15, 135</value>
+  </data>
+  <data name="EllipseButton.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>50, 50</value>
+  </data>
+  <data name="EllipseButton.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;EllipseButton.Name" xml:space="preserve">
+    <value>EllipseButton</value>
+  </data>
+  <data name="&gt;&gt;EllipseButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EllipseButton.Parent" xml:space="preserve">
+    <value>ControlPanel</value>
+  </data>
+  <data name="&gt;&gt;EllipseButton.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="RectangleButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="RectangleButton.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
+        EAAAjBIAAP1NAACBPgAAWesAARIPAAA85gAAGc66ySIyAAABJmlDQ1BBZG9iZSBSR0IgKDE5OTgpAAAo
+        z2NgYDJwdHFyZRJgYMjNKykKcndSiIiMUmA/z8DGwMwABonJxQWOAQE+IHZefl4qAwb4do2BEURf1gWZ
+        xUAa4EouKCoB0n+A2CgltTiZgYHRAMjOLi8pAIozzgGyRZKywewNIHZRSJAzkH0EyOZLh7CvgNhJEPYT
+        ELsI6Akg+wtIfTqYzcQBNgfClgGxS1IrQPYyOOcXVBZlpmeUKBhaWloqOKbkJ6UqBFcWl6TmFit45iXn
+        FxXkFyWWpKYA1ULcBwaCEIWgENMAarTQZKAyAMUDhPU5EBy+jGJnEGIIkFxaVAZlMjIZE+YjzJgjwcDg
+        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsMAAALDAE/QCLI
+        AAAAa0lEQVRYR+3OsQ3AIBAEQVJw/+04phWqgPwTtMHLYO1p85vy9nFgskiySLJIskh3smp7kgpHoT1r
+        JkwWmSwyWWSyyGSRySKTRSaLTBaZLDJZZLLIZJH9l5VUOAptWF8liySLJIski3Qkq48FjSVrkTpXwUEA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="RectangleButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RectangleButton.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>15, 75</value>
+  </data>
+  <data name="RectangleButton.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>50, 50</value>
+  </data>
+  <data name="RectangleButton.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;RectangleButton.Name" xml:space="preserve">
+    <value>RectangleButton</value>
+  </data>
+  <data name="&gt;&gt;RectangleButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RectangleButton.Parent" xml:space="preserve">
+    <value>ControlPanel</value>
+  </data>
+  <data name="&gt;&gt;RectangleButton.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="LineButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="LineButton.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAABGdBTUEAALGeYUxB9wAAACBjSFJNAACH
+        EAAAjBIAAP1NAACBPgAAWesAARIPAAA85gAAGc66ySIyAAABJmlDQ1BBZG9iZSBSR0IgKDE5OTgpAAAo
+        z2NgYDJwdHFyZRJgYMjNKykKcndSiIiMUmA/z8DGwMwABonJxQWOAQE+IHZefl4qAwb4do2BEURf1gWZ
+        xUAa4EouKCoB0n+A2CgltTiZgYHRAMjOLi8pAIozzgGyRZKywewNIHZRSJAzkH0EyOZLh7CvgNhJEPYT
+        ELsI6Akg+wtIfTqYzcQBNgfClgGxS1IrQPYyOOcXVBZlpmeUKBhaWloqOKbkJ6UqBFcWl6TmFit45iXn
+        FxXkFyWWpKYA1ULcBwaCEIWgENMAarTQZKAyAMUDhPU5EBy+jGJnEGIIkFxaVAZlMjIZE+YjzJgjwcDg
+        v5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsMAAALDAE/QCLI
+        AAAA+ElEQVRYR+3SsQ3CMBBAUVpgEUTFapFSRMoIkTIKtKmomQBmyBb8CkUuYp99d6aw9GVZd82T7MPz
+        tf5hjSWpsSQ1lqTGklSB9Vg+/TgHwyBvFqbL9XY8nbthClbbXFk/Eyf3YLvNj5VuIieWyEQeLKmJzFkZ
+        JrJl5ZnIkJVtIitWiYlMWIUm0meVm0iZpWIiTZaWidRYiibSYemaSIGlbqJSloWJilhGJspn2Zkok2Vq
+        ohyWtYnELAcTyVg+JhKw3EyUyvI0URLL2URxlr+JIqz78vY30R6rlon2WN0wVTFR5BH7cfY3UfzLV6mx
+        JDWWpMaS1FjpvdYvV0kAzFAc6+0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="LineButton.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>15, 15</value>
+  </data>
+  <data name="LineButton.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>50, 50</value>
+  </data>
+  <data name="LineButton.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;LineButton.Name" xml:space="preserve">
+    <value>LineButton</value>
+  </data>
+  <data name="&gt;&gt;LineButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LineButton.Parent" xml:space="preserve">
+    <value>ControlPanel</value>
+  </data>
+  <data name="&gt;&gt;LineButton.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ControlPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>0, 0</value>
+  </data>
+  <data name="ControlPanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>80, 675</value>
+  </data>
+  <data name="ControlPanel.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ControlPanel.Name" xml:space="preserve">
+    <value>ControlPanel</value>
+  </data>
+  <data name="&gt;&gt;ControlPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=5.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ControlPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ControlPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing.Primitives">
+    <value>8, 20</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>1262, 673</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Paint</value>
+  </data>
+  <data name="&gt;&gt;ColorDialog.Name" xml:space="preserve">
+    <value>ColorDialog</value>
+  </data>
+  <data name="&gt;&gt;ColorDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColorDialog, System.Windows.Forms, Version=5.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=5.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
