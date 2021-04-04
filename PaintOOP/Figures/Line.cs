@@ -9,17 +9,26 @@ namespace PaintOOP.Figures
 {
     public class Line : Figure
     {
-        public Line(PointF start, PointF end, Color color, float penWidth)
+        #region Line Constructor's
+        public Line() { }
+
+        public Line(Color color, float penWidth): base(color, penWidth) { }
+
+        public Line(Point startPoint, Point endPoint, Color color, float penWidth): base(color, penWidth)
         {
-            startPoint = start;
-            endPoint = end;
-
-            pen = new Pen(color, penWidth);
+            points[0] = startPoint;
+            points[1] = endPoint;
         }
+        #endregion
 
+        public override Figure Clone()
+        {
+            return (Line)MemberwiseClone();
+        }
+        
         public override void Draw(Graphics graphics)
         {
-            graphics.DrawLine(pen, startPoint, endPoint);
+            graphics.DrawLine(pen, points[0], points[1]);
         }
     }
 }

@@ -9,10 +9,25 @@ namespace PaintOOP
 {
     public abstract class Figure
     {
-        public PointF startPoint { get; set; }
-        public PointF endPoint { get; set; }
+        #region Variable's
+        public Point[] points; 
 
         public Pen pen { get; set; }
+
+        public Boolean isFeel { get; set; }
+        #endregion
+
+        #region Constructor's
+        public Figure() { }
+
+        public Figure(Color color, float penWidth)
+        {
+            pen = new Pen(color, penWidth);
+        }
+        #endregion
+
+        public abstract Figure Clone();
+
         public abstract void Draw(Graphics graphics);
     }
 }

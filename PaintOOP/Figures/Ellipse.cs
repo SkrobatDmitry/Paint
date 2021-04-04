@@ -9,27 +9,46 @@ namespace PaintOOP.Figures
 {
     public class Ellipse : Figure
     {
-        public Brush brush { get; set; }
+        #region Ellipse Variable's
+        private float width;
+        private float height;
 
-        public Ellipse(PointF start, PointF end, Color color, Color fillColor, float penWidth)
+        private Brush brush;
+        #endregion
+        
+        #region Ellipse Constructor's
+        public Ellipse() { }
+        
+        public Ellipse(Color color, Color fillColor, float penWidth): base(color, penWidth) 
         {
-            PointF pointStart = new PointF(Math.Min(start.X, end.X), Math.Min(start.Y, end.Y));
-            PointF pointEnd = new PointF(Math.Max(start.X, end.X), Math.Max(start.Y, end.Y));
-
-            startPoint = pointStart;
-            endPoint = pointEnd;
-
-            pen = new Pen(color, penWidth);
             brush = new SolidBrush(fillColor);
+        }
+
+        public Ellipse(Point startPoint, Point endPoint, Color color, Color fillColor, float penWidth): base(color, penWidth)
+        {
+            points[0] = new Point(Math.Min(startPoint.X, endPoint.X), Math.Min(startPoint.Y, endPoint.Y)); 
+            points[1] = new Point(Math.Max(startPoint.X, endPoint.X), Math.Max(startPoint.Y, endPoint.Y));
+
+            brush = new SolidBrush(fillColor);
+        }
+        #endregion
+
+        public override Figure Clone()
+        {
+            return (Ellipse)MemberwiseClone();
         }
 
         public override void Draw(Graphics graphics)
         {
-            float width = endPoint.X - startPoint.X;
-            float height = endPoint.Y - startPoint.Y;
+            width = points[1].X - points[0].X;
+            height = points[1].Y - points[0].Y;
 
-            graphics.DrawEllipse(pen, startPoint.X, startPoint.Y, width, height);
-            graphics.FillEllipse(brush, startPoint.X, startPoint.Y, width, height);
+            if (isFeel)
+            {
+                graphics.FillEllipse(brush, points[0].X, points[0].Y, width, height);
+            }
+
+            graphics.DrawEllipse(pen, points[0].X, points[0].Y, width, height);
         }
     }
 }

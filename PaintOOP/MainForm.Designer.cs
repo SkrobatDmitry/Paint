@@ -30,12 +30,15 @@ namespace PaintOOP
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.PictureBox = new System.Windows.Forms.PictureBox();
             this.ControlPanel = new System.Windows.Forms.Panel();
+            this.ClearButton = new System.Windows.Forms.Button();
+            this.CornersTrackBar = new System.Windows.Forms.TrackBar();
+            this.PenWidthTrackBar = new System.Windows.Forms.TrackBar();
+            this.isFeelCheck = new System.Windows.Forms.CheckBox();
+            this.RegularPolygonButton = new System.Windows.Forms.Button();
             this.CornersNumLabel = new System.Windows.Forms.Label();
             this.PenWidthLabel = new System.Windows.Forms.Label();
-            this.CornersNumBox = new System.Windows.Forms.NumericUpDown();
-            this.PenSizeBox = new System.Windows.Forms.NumericUpDown();
             this.SecondColorLabel = new System.Windows.Forms.Label();
             this.FirstColorLabel = new System.Windows.Forms.Label();
             this.SecondColorButton = new System.Windows.Forms.Button();
@@ -46,26 +49,34 @@ namespace PaintOOP
             this.RectangleButton = new System.Windows.Forms.Button();
             this.LineButton = new System.Windows.Forms.Button();
             this.ColorDialog = new System.Windows.Forms.ColorDialog();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
             this.ControlPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CornersNumBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PenSizeBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CornersTrackBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PenWidthTrackBar)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox
+            // PictureBox
             // 
-            this.pictureBox.BackColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.pictureBox, "pictureBox");
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.TabStop = false;
+            this.PictureBox.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.PictureBox, "PictureBox");
+            this.PictureBox.Name = "PictureBox";
+            this.PictureBox.TabStop = false;
+            this.PictureBox.Paint += new System.Windows.Forms.PaintEventHandler(this.PictureBox_Paint);
+            this.PictureBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PictureBox_MouseClick);
+            this.PictureBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PictureBox_MouseDown);
+            this.PictureBox.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PictureBox_MouseMove);
+            this.PictureBox.MouseUp += new System.Windows.Forms.MouseEventHandler(this.PictureBox_MouseUp);
             // 
             // ControlPanel
             // 
-            this.ControlPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(172)))), ((int)(((byte)(220)))));
+            this.ControlPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(215)))), ((int)(((byte)(220)))));
+            this.ControlPanel.Controls.Add(this.ClearButton);
+            this.ControlPanel.Controls.Add(this.CornersTrackBar);
+            this.ControlPanel.Controls.Add(this.PenWidthTrackBar);
+            this.ControlPanel.Controls.Add(this.isFeelCheck);
+            this.ControlPanel.Controls.Add(this.RegularPolygonButton);
             this.ControlPanel.Controls.Add(this.CornersNumLabel);
             this.ControlPanel.Controls.Add(this.PenWidthLabel);
-            this.ControlPanel.Controls.Add(this.CornersNumBox);
-            this.ControlPanel.Controls.Add(this.PenSizeBox);
             this.ControlPanel.Controls.Add(this.SecondColorLabel);
             this.ControlPanel.Controls.Add(this.FirstColorLabel);
             this.ControlPanel.Controls.Add(this.SecondColorButton);
@@ -79,6 +90,46 @@ namespace PaintOOP
             resources.ApplyResources(this.ControlPanel, "ControlPanel");
             this.ControlPanel.Name = "ControlPanel";
             // 
+            // ClearButton
+            // 
+            this.ClearButton.BackColor = System.Drawing.Color.White;
+            this.ClearButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.ClearButton, "ClearButton");
+            this.ClearButton.Name = "ClearButton";
+            this.ClearButton.UseVisualStyleBackColor = false;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
+            // 
+            // CornersTrackBar
+            // 
+            resources.ApplyResources(this.CornersTrackBar, "CornersTrackBar");
+            this.CornersTrackBar.Minimum = 3;
+            this.CornersTrackBar.Name = "CornersTrackBar";
+            this.CornersTrackBar.Value = 3;
+            this.CornersTrackBar.Scroll += new System.EventHandler(this.CornersTrackBar_Scroll);
+            // 
+            // PenWidthTrackBar
+            // 
+            resources.ApplyResources(this.PenWidthTrackBar, "PenWidthTrackBar");
+            this.PenWidthTrackBar.Minimum = 1;
+            this.PenWidthTrackBar.Name = "PenWidthTrackBar";
+            this.PenWidthTrackBar.Value = 3;
+            this.PenWidthTrackBar.Scroll += new System.EventHandler(this.PenWidthTrackBar_Scroll);
+            // 
+            // isFeelCheck
+            // 
+            resources.ApplyResources(this.isFeelCheck, "isFeelCheck");
+            this.isFeelCheck.Name = "isFeelCheck";
+            this.isFeelCheck.UseVisualStyleBackColor = true;
+            this.isFeelCheck.CheckedChanged += new System.EventHandler(this.isFeelCheck_CheckedChanged);
+            // 
+            // RegularPolygonButton
+            // 
+            this.RegularPolygonButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.RegularPolygonButton, "RegularPolygonButton");
+            this.RegularPolygonButton.Name = "RegularPolygonButton";
+            this.RegularPolygonButton.UseVisualStyleBackColor = true;
+            this.RegularPolygonButton.Click += new System.EventHandler(this.RegularPolygonButton_Click);
+            // 
             // CornersNumLabel
             // 
             resources.ApplyResources(this.CornersNumLabel, "CornersNumLabel");
@@ -88,35 +139,6 @@ namespace PaintOOP
             // 
             resources.ApplyResources(this.PenWidthLabel, "PenWidthLabel");
             this.PenWidthLabel.Name = "PenWidthLabel";
-            // 
-            // CornersNumBox
-            // 
-            this.CornersNumBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CornersNumBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.CornersNumBox, "CornersNumBox");
-            this.CornersNumBox.Minimum = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.CornersNumBox.Name = "CornersNumBox";
-            this.CornersNumBox.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            // 
-            // PenSizeBox
-            // 
-            this.PenSizeBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PenSizeBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.PenSizeBox, "PenSizeBox");
-            this.PenSizeBox.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.PenSizeBox.Name = "PenSizeBox";
             // 
             // SecondColorLabel
             // 
@@ -139,7 +161,7 @@ namespace PaintOOP
             // 
             // FirstColorButton
             // 
-            this.FirstColorButton.BackColor = System.Drawing.Color.White;
+            this.FirstColorButton.BackColor = System.Drawing.Color.Black;
             this.FirstColorButton.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.FirstColorButton, "FirstColorButton");
             this.FirstColorButton.Name = "FirstColorButton";
@@ -152,6 +174,7 @@ namespace PaintOOP
             resources.ApplyResources(this.BrokenLineButton, "BrokenLineButton");
             this.BrokenLineButton.Name = "BrokenLineButton";
             this.BrokenLineButton.UseVisualStyleBackColor = true;
+            this.BrokenLineButton.Click += new System.EventHandler(this.BrokenLineButton_Click);
             // 
             // PolygonButton
             // 
@@ -159,6 +182,7 @@ namespace PaintOOP
             resources.ApplyResources(this.PolygonButton, "PolygonButton");
             this.PolygonButton.Name = "PolygonButton";
             this.PolygonButton.UseVisualStyleBackColor = true;
+            this.PolygonButton.Click += new System.EventHandler(this.PolygonButton_Click);
             // 
             // EllipseButton
             // 
@@ -166,6 +190,7 @@ namespace PaintOOP
             resources.ApplyResources(this.EllipseButton, "EllipseButton");
             this.EllipseButton.Name = "EllipseButton";
             this.EllipseButton.UseVisualStyleBackColor = true;
+            this.EllipseButton.Click += new System.EventHandler(this.EllipseButton_Click);
             // 
             // RectangleButton
             // 
@@ -173,6 +198,7 @@ namespace PaintOOP
             resources.ApplyResources(this.RectangleButton, "RectangleButton");
             this.RectangleButton.Name = "RectangleButton";
             this.RectangleButton.UseVisualStyleBackColor = true;
+            this.RectangleButton.Click += new System.EventHandler(this.RectangleButton_Click);
             // 
             // LineButton
             // 
@@ -181,31 +207,33 @@ namespace PaintOOP
             this.LineButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.LineButton.Name = "LineButton";
             this.LineButton.UseVisualStyleBackColor = true;
+            this.LineButton.Click += new System.EventHandler(this.LineButton_Click);
             // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(200)))), ((int)(((byte)(233)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(238)))), ((int)(((byte)(240)))));
             this.Controls.Add(this.ControlPanel);
-            this.Controls.Add(this.pictureBox);
+            this.Controls.Add(this.PictureBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.HelpButton = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.MainForm_HelpButtonClicked);
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
             this.ControlPanel.ResumeLayout(false);
             this.ControlPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CornersNumBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PenSizeBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CornersTrackBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PenWidthTrackBar)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.PictureBox PictureBox;
         private System.Windows.Forms.Panel ControlPanel;
         private System.Windows.Forms.Button LineButton;
         private System.Windows.Forms.Button BrokenLineButton;
@@ -219,8 +247,11 @@ namespace PaintOOP
         private System.Windows.Forms.Label SecondColorLabel;
         private System.Windows.Forms.Label CornersNumLabel;
         private System.Windows.Forms.Label PenWidthLabel;
-        private System.Windows.Forms.NumericUpDown CornersNumBox;
-        private System.Windows.Forms.NumericUpDown PenSizeBox;
+        private System.Windows.Forms.Button RegularPolygonButton;
+        private System.Windows.Forms.CheckBox isFeelCheck;
+        private System.Windows.Forms.TrackBar PenWidthTrackBar;
+        private System.Windows.Forms.TrackBar CornersTrackBar;
+        private System.Windows.Forms.Button ClearButton;
     }
 }
 
