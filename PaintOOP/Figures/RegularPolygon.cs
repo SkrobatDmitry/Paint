@@ -14,7 +14,7 @@ namespace PaintOOP.Figures
 
         public int numOfCorners;
 
-        public Brush brush;
+        private Brush brush;
         #endregion
 
         #region RegularPolygon Constructor's

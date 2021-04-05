@@ -13,7 +13,7 @@ namespace PaintOOP.Figures
         private float width;
         private float height;
 
-        public Brush brush;
+        private Brush brush;
         #endregion
         
         #region Ellipse Constructor's
