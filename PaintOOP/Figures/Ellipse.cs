@@ -13,12 +13,12 @@ namespace PaintOOP.Figures
         private float width;
         private float height;
 
-        private Brush brush;
+        public Brush brush;
         #endregion
         
         #region Ellipse Constructor's
         public Ellipse() { }
-        
+
         public Ellipse(Color color, Color fillColor, float penWidth): base(color, penWidth) 
         {
             brush = new SolidBrush(fillColor);

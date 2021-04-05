@@ -13,7 +13,7 @@ namespace PaintOOP.Figures
         private float width;
         private float height;
 
-        private Brush brush;
+        public Brush brush;
         #endregion
 
         #region Rectangle Constructor's

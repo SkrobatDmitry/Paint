@@ -9,7 +9,7 @@ namespace PaintOOP.Figures
 {
     public class Polygon : Figure
     {
-        private Brush brush;
+        public Brush brush;
 
         #region Polygon Constructor's
         public Polygon() { }

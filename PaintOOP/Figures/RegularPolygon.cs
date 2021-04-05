@@ -12,9 +12,9 @@ namespace PaintOOP.Figures
         #region RegularPolygon Variable's
         private PointF[] vertices;
 
-        int numOfCorners;
+        public int numOfCorners;
 
-        private Brush brush;
+        public Brush brush;
         #endregion
 
         #region RegularPolygon Constructor's
@@ -41,6 +41,7 @@ namespace PaintOOP.Figures
 
         public override void Draw(Graphics graphics)
         {
+            vertices = new PointF[numOfCorners];
             vertices[0] = points[1];
 
             PointF o = points[0];

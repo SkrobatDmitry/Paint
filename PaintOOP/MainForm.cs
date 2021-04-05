@@ -16,6 +16,7 @@ namespace PaintOOP
         private FigureList figureList;
 
         private Figure currentFigure;
+        private ICreator currentCreator;
 
         private Point startPoint;
         private Point endPoint;
@@ -28,7 +29,6 @@ namespace PaintOOP
 
         private Boolean isDrawing;
         private Boolean isFeel;
-        private Boolean isManyClick;
 
         private List<Point> points;
         #endregion
@@ -57,38 +57,51 @@ namespace PaintOOP
         #region Figure Button's Click
         private void LineButton_Click(object sender, EventArgs e)
         {
-            currentFigure = new Figures.Line(color, penWidth);
-            figureChanged(currentFigure);
+            currentCreator = new Figures.LineCreator();
+            currentFigure = currentCreator.Create(color, fillColor, penWidth);
+
+            stateChange(currentCreator);
         }
 
         private void RectangleButton_Click(object sender, EventArgs e)
         {
-            currentFigure = new Figures.Rectangle(color, fillColor, penWidth);
-            figureChanged(currentFigure);
+            currentCreator = new Figures.RectangleCreator();
+            currentFigure = currentCreator.Create(color, fillColor, penWidth);
+
+            stateChange(currentCreator);
         }
 
         private void EllipseButton_Click(object sender, EventArgs e)
         {
-            currentFigure = new Figures.Ellipse(color, fillColor, penWidth);
-            figureChanged(currentFigure);
+            currentCreator = new Figures.EllipseCreator();
+            currentFigure = currentCreator.Create(color, fillColor, penWidth);
+
+            stateChange(currentCreator);
         }
 
         private void PolygonButton_Click(object sender, EventArgs e)
         {
-            currentFigure = new Figures.Polygon(color, fillColor, penWidth);
-            figureChanged(currentFigure);
+            currentCreator = new Figures.PolygonCreator();
+            currentFigure = currentCreator.Create(color, fillColor, penWidth);
+
+            stateChange(currentCreator);
         }
 
         private void RegularPolygonButton_Click(object sender, EventArgs e)
         {
-            currentFigure = new Figures.RegularPolygon(cornersNum, color, fillColor, penWidth);
-            figureChanged(currentFigure);
+            currentCreator = new Figures.RegularPolygonCreator();
+            currentFigure = currentCreator.Create(color, fillColor, penWidth);
+
+            (currentFigure as Figures.RegularPolygon).numOfCorners = cornersNum;
+            stateChange(currentCreator);
         }
 
         private void BrokenLineButton_Click(object sender, EventArgs e)
         {
-            currentFigure = new Figures.BrokenLine(color, penWidth);
-            figureChanged(currentFigure);
+            currentCreator = new Figures.BrokenLineCreator();
+            currentFigure = currentCreator.Create(color, fillColor, penWidth);
+
+            stateChange(currentCreator);
         }
         #endregion
 
@@ -117,7 +130,7 @@ namespace PaintOOP
 
             if ((currentFigure != null) && isFeelCheck.Enabled)
             {
-                if (currentFigure is Figures.RegularPolygon)
+                if (currentCreator.isVariableAngles)
                 {
                     object[] args = new object[4] { cornersNum, color, fillColor, penWidth };
                     currentFigure = (Figure)Activator.CreateInstance(currentFigure.GetType(), args);
@@ -148,15 +161,14 @@ namespace PaintOOP
             cornersNum = (int)CornersTrackBar.Value;
             CornersNumLabel.Text = "Corners Num: " + cornersNum.ToString();
 
-            object[] args = new object[4] { cornersNum, color, fillColor, penWidth };
-            currentFigure = (Figure)Activator.CreateInstance(currentFigure.GetType(), args);
+            (currentFigure as Figures.RegularPolygon).numOfCorners = cornersNum;
         }
         #endregion
 
         #region Mouse Action
         private void PictureBox_MouseDown(object sender, MouseEventArgs e)
         {
-            if (currentFigure != null && !isManyClick)
+            if (currentFigure != null && !currentCreator.isManyPoint)
             {
                 if (e.Button == MouseButtons.Left)
                 {
@@ -175,7 +187,7 @@ namespace PaintOOP
 
         private void PictureBox_MouseUp(object sender, MouseEventArgs e)
         {
-            if (isDrawing && !isManyClick)
+            if (isDrawing && !currentCreator.isManyPoint)
             {
                 endPoint.X = e.X;
                 endPoint.Y = e.Y;
@@ -194,7 +206,7 @@ namespace PaintOOP
 
         private void PictureBox_MouseClick(object sender, MouseEventArgs e)
         {
-            if (isManyClick)
+            if (currentCreator.isManyPoint)
             {
                 if (e.Button == MouseButtons.Left)
                 {
@@ -263,20 +275,20 @@ namespace PaintOOP
             }
         }
 
-        private void figureChanged(Figure figure)
+        private void stateChange(ICreator creator)
         {
-            if (figure is Figures.Line || figure is Figures.BrokenLine)
+            if (creator.isCanFeel)
+            {
+                isFeelCheck.Enabled = true;
+            }
+            else
             {
                 isFeelCheck.Enabled = false;
                 isFeelCheck.Checked = false;
                 isFeel = false;
             }
-            else
-            {
-                isFeelCheck.Enabled = true;
-            }
 
-            if (figure is Figures.RegularPolygon)
+            if (creator.isVariableAngles)
             {
                 CornersTrackBar.Visible = true;
                 CornersNumLabel.Visible = true;
@@ -285,15 +297,6 @@ namespace PaintOOP
             {
                 CornersTrackBar.Visible = false;
                 CornersNumLabel.Visible = false;
-            }
-
-            if (figure is Figures.Polygon || figure is Figures.BrokenLine)
-            {
-                isManyClick = true;
-            }
-            else
-            {
-                isManyClick = false;
             }
         }
 
@@ -305,7 +308,7 @@ namespace PaintOOP
 
         private void MainForm_HelpButtonClicked(object sender, CancelEventArgs e)
         {
-            MessageBox.Show("Многоугольник | Ломанная :\nЛКМ - поставить новую точку\nПКМ - поставить последнюю точку\n\nОстальыне фигуры :\nЛКМ - начать рисование\nОтпустить ЛКМ - закончить рисование", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Многоугольник | Ломанная :\nЛКМ - поставить новую точку\nПКМ - поставить последнюю точку\n\nОстальные фигуры :\nЛКМ - начать рисование\nОтпустить ЛКМ - закончить рисование", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         #endregion
     }
