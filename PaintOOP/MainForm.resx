@@ -84,10 +84,76 @@
   <data name="&gt;&gt;PictureBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="ClearButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=5.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+  <data name="button1.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI Black, 9pt, style=Bold</value>
+  </data>
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>75, 594</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>50, 30</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>16</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>&gt;&gt;</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>ControlPanel</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="UndoButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="UndoButton.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI Black, 9pt, style=Bold</value>
+  </data>
+  <data name="UndoButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="UndoButton.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>15, 594</value>
+  </data>
+  <data name="UndoButton.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>50, 30</value>
+  </data>
+  <data name="UndoButton.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>15</value>
+  </data>
+  <data name="UndoButton.Text" xml:space="preserve">
+    <value>&lt;&lt;</value>
+  </data>
+  <data name="&gt;&gt;UndoButton.Name" xml:space="preserve">
+    <value>UndoButton</value>
+  </data>
+  <data name="&gt;&gt;UndoButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UndoButton.Parent" xml:space="preserve">
+    <value>ControlPanel</value>
+  </data>
+  <data name="&gt;&gt;UndoButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ClearButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
   <data name="ClearButton.Font" type="System.Drawing.Font, System.Drawing.Common">
     <value>Segoe UI Semibold, 9pt, style=Bold</value>
   </data>
@@ -116,7 +182,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;ClearButton.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="CornersTrackBar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -128,7 +194,7 @@
     <value>124, 56</value>
   </data>
   <data name="CornersTrackBar.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>16</value>
+    <value>14</value>
   </data>
   <data name="CornersTrackBar.Visible" type="System.Boolean, System.Private.CoreLib">
     <value>False</value>
@@ -143,7 +209,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;CornersTrackBar.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="PenWidthTrackBar.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>8, 352</value>
@@ -152,7 +218,7 @@
     <value>124, 56</value>
   </data>
   <data name="PenWidthTrackBar.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>15</value>
+    <value>12</value>
   </data>
   <data name="&gt;&gt;PenWidthTrackBar.Name" xml:space="preserve">
     <value>PenWidthTrackBar</value>
@@ -164,7 +230,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;PenWidthTrackBar.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="isFeelCheck.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
@@ -179,7 +245,7 @@
     <value>73, 24</value>
   </data>
   <data name="isFeelCheck.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>14</value>
+    <value>10</value>
   </data>
   <data name="isFeelCheck.Text" xml:space="preserve">
     <value>Is Feel</value>
@@ -194,7 +260,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;isFeelCheck.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="RegularPolygonButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -275,7 +341,7 @@
     <value>50, 50</value>
   </data>
   <data name="RegularPolygonButton.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>13</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;RegularPolygonButton.Name" xml:space="preserve">
     <value>RegularPolygonButton</value>
@@ -287,7 +353,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;RegularPolygonButton.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="CornersNumLabel.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
@@ -305,7 +371,7 @@
     <value>116, 20</value>
   </data>
   <data name="CornersNumLabel.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="CornersNumLabel.Text" xml:space="preserve">
     <value>Corners Num: 3</value>
@@ -323,7 +389,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;CornersNumLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="PenWidthLabel.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
@@ -356,7 +422,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;PenWidthLabel.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="SecondColorLabel.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
@@ -374,7 +440,7 @@
     <value>43, 17</value>
   </data>
   <data name="SecondColorLabel.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="SecondColorLabel.Text" xml:space="preserve">
     <value>Brush</value>
@@ -389,7 +455,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;SecondColorLabel.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="FirstColorLabel.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
@@ -404,7 +470,7 @@
     <value>31, 17</value>
   </data>
   <data name="FirstColorLabel.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="FirstColorLabel.Text" xml:space="preserve">
     <value>Pen</value>
@@ -419,7 +485,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;FirstColorLabel.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="SecondColorButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -434,7 +500,7 @@
     <value>50, 50</value>
   </data>
   <data name="SecondColorButton.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;SecondColorButton.Name" xml:space="preserve">
     <value>SecondColorButton</value>
@@ -446,7 +512,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;SecondColorButton.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="FirstColorButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -458,7 +524,7 @@
     <value>50, 50</value>
   </data>
   <data name="FirstColorButton.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;FirstColorButton.Name" xml:space="preserve">
     <value>FirstColorButton</value>
@@ -470,7 +536,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;FirstColorButton.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="BrokenLineButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -551,7 +617,7 @@
     <value>50, 50</value>
   </data>
   <data name="BrokenLineButton.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;BrokenLineButton.Name" xml:space="preserve">
     <value>BrokenLineButton</value>
@@ -563,7 +629,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;BrokenLineButton.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="PolygonButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -660,7 +726,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;PolygonButton.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="EllipseButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -754,7 +820,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;EllipseButton.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="RectangleButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -840,7 +906,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;RectangleButton.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="LineButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -922,7 +988,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;LineButton.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="ControlPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>0, 0</value>
@@ -958,7 +1024,7 @@
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Paint</value>
+    <value>Simple Paint</value>
   </data>
   <data name="&gt;&gt;ColorDialog.Name" xml:space="preserve">
     <value>ColorDialog</value>

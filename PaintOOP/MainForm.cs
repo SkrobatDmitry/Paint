@@ -206,7 +206,7 @@ namespace PaintOOP
 
         private void PictureBox_MouseClick(object sender, MouseEventArgs e)
         {
-            if (currentCreator.isManyPoint)
+            if (currentCreator != null && currentCreator.isManyPoint)
             {
                 if (e.Button == MouseButtons.Left)
                 {
