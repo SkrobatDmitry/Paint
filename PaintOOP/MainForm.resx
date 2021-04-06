@@ -84,39 +84,45 @@
   <data name="&gt;&gt;PictureBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="RedoButton.Enabled" type="System.Boolean, System.Private.CoreLib">
+    <value>False</value>
+  </data>
+  <data name="RedoButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=5.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
-  <data name="button1.Font" type="System.Drawing.Font, System.Drawing.Common">
+  <data name="RedoButton.Font" type="System.Drawing.Font, System.Drawing.Common">
     <value>Segoe UI Black, 9pt, style=Bold</value>
   </data>
-  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="RedoButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+  <data name="RedoButton.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>75, 594</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+  <data name="RedoButton.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>50, 30</value>
   </data>
-  <data name="button1.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="RedoButton.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>16</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
+  <data name="RedoButton.Text" xml:space="preserve">
     <value>&gt;&gt;</value>
   </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
+  <data name="&gt;&gt;RedoButton.Name" xml:space="preserve">
+    <value>RedoButton</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+  <data name="&gt;&gt;RedoButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;RedoButton.Parent" xml:space="preserve">
     <value>ControlPanel</value>
   </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;RedoButton.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="UndoButton.Enabled" type="System.Boolean, System.Private.CoreLib">
+    <value>False</value>
   </data>
   <data name="UndoButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>

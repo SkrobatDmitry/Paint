@@ -32,7 +32,7 @@ namespace PaintOOP
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.PictureBox = new System.Windows.Forms.PictureBox();
             this.ControlPanel = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.RedoButton = new System.Windows.Forms.Button();
             this.UndoButton = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
             this.CornersTrackBar = new System.Windows.Forms.TrackBar();
@@ -72,7 +72,7 @@ namespace PaintOOP
             // ControlPanel
             // 
             this.ControlPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(215)))), ((int)(((byte)(220)))));
-            this.ControlPanel.Controls.Add(this.button1);
+            this.ControlPanel.Controls.Add(this.RedoButton);
             this.ControlPanel.Controls.Add(this.UndoButton);
             this.ControlPanel.Controls.Add(this.ClearButton);
             this.ControlPanel.Controls.Add(this.CornersTrackBar);
@@ -94,13 +94,14 @@ namespace PaintOOP
             resources.ApplyResources(this.ControlPanel, "ControlPanel");
             this.ControlPanel.Name = "ControlPanel";
             // 
-            // button1
+            // RedoButton
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = false;
+            this.RedoButton.BackColor = System.Drawing.Color.White;
+            this.RedoButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.RedoButton, "RedoButton");
+            this.RedoButton.Name = "RedoButton";
+            this.RedoButton.UseVisualStyleBackColor = false;
+            this.RedoButton.Click += new System.EventHandler(this.RedoButton_Click);
             // 
             // UndoButton
             // 
@@ -109,6 +110,7 @@ namespace PaintOOP
             resources.ApplyResources(this.UndoButton, "UndoButton");
             this.UndoButton.Name = "UndoButton";
             this.UndoButton.UseVisualStyleBackColor = false;
+            this.UndoButton.Click += new System.EventHandler(this.UndoButton_Click);
             // 
             // ClearButton
             // 
@@ -272,7 +274,7 @@ namespace PaintOOP
         private System.Windows.Forms.TrackBar PenWidthTrackBar;
         private System.Windows.Forms.TrackBar CornersTrackBar;
         private System.Windows.Forms.Button ClearButton;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button RedoButton;
         private System.Windows.Forms.Button UndoButton;
     }
 }

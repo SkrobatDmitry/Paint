@@ -13,7 +13,7 @@ namespace PaintOOP
     public partial class MainForm : Form
     {
         #region Variable Declaration
-        private FigureList figureList;
+        private UndoRedo.FigureStorage figureStorage;
 
         private Figure currentFigure;
         private ICreator currentCreator;
@@ -37,7 +37,7 @@ namespace PaintOOP
         {
             InitializeComponent();
 
-            figureList = new FigureList();
+            figureStorage = new UndoRedo.FigureStorage();
 
             color = Color.Black;
             fillColor = Color.White;
@@ -197,7 +197,15 @@ namespace PaintOOP
                 if (startPoint != endPoint)
                 { 
                     points[1] = endPoint;
-                    figureList.Add(currentFigure);
+                    figureStorage.undoList.Add(currentFigure);
+
+                    if (!figureStorage.redoStack.IsEmpty())
+                    {
+                        figureStorage.redoStack.ClearStack();
+                        RedoButton.Enabled = false;
+                    }
+
+                    UndoButton.Enabled = true;
                 }
 
                 currentFigure = currentFigure.Clone();
@@ -232,8 +240,15 @@ namespace PaintOOP
                 {
                     isDrawing = !isDrawing;
 
-                    figureList.Add(currentFigure);
+                    UndoButton.Enabled = true;
+                    figureStorage.undoList.Add(currentFigure);
                     currentFigure = currentFigure.Clone();
+
+                    if (!figureStorage.redoStack.IsEmpty())
+                    {
+                        figureStorage.redoStack.ClearStack();
+                        RedoButton.Enabled = false;
+                    }
                 }
             }
         }
@@ -255,7 +270,7 @@ namespace PaintOOP
 
         private void PictureBox_Paint(object sender, PaintEventArgs e)
         {
-            figureList.DrawFigures(e.Graphics);
+            figureStorage.DrawFigures(e.Graphics);
             if (isDrawing)
             {
                 currentFigure.Draw(e.Graphics);
@@ -284,8 +299,6 @@ namespace PaintOOP
             else
             {
                 isFeelCheck.Enabled = false;
-                isFeelCheck.Checked = false;
-                isFeel = false;
             }
 
             if (creator.isVariableAngles)
@@ -300,10 +313,37 @@ namespace PaintOOP
             }
         }
 
+        private void UndoButton_Click(object sender, EventArgs e)
+        {
+            figureStorage.Undo();
+            PictureBox.Refresh();
+
+            RedoButton.Enabled = true;
+            if (figureStorage.undoList.IsEmpty())
+            {
+                UndoButton.Enabled = false;
+            }
+        }
+
+        private void RedoButton_Click(object sender, EventArgs e)
+        {
+            figureStorage.Redo();
+            PictureBox.Refresh();
+
+            UndoButton.Enabled = true;
+            if (figureStorage.redoStack.IsEmpty())
+            {
+                RedoButton.Enabled = false;
+            }
+        }
+
         private void ClearButton_Click(object sender, EventArgs e)
         {
-            figureList = new FigureList();
+            figureStorage.Clear();
             PictureBox.Refresh();
+
+            UndoButton.Enabled = false;
+            RedoButton.Enabled = false;
         }
 
         private void MainForm_HelpButtonClicked(object sender, CancelEventArgs e)
