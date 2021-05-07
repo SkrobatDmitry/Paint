@@ -3,15 +3,15 @@
     "undoList": [
       {
         "$type": "PaintOOP.Figures.Rectangle, PaintOOP",
-        "width": 259.0,
-        "height": 189.0,
+        "width": 274.0,
+        "height": 264.0,
         "brush": {
           "$type": "System.Drawing.SolidBrush, System.Drawing.Common",
           "Color": "White"
         },
         "points": [
-          "116, 43",
-          "375, 232"
+          "208, 139",
+          "482, 403"
         ],
         "color": "Black",
         "penWidth": 3.0,
@@ -19,86 +19,19 @@
       },
       {
         "$type": "PaintOOP.Figures.Rectangle, PaintOOP",
-        "width": 221.0,
-        "height": 249.0,
+        "width": 311.0,
+        "height": 281.0,
         "brush": {
           "$type": "System.Drawing.SolidBrush, System.Drawing.Common",
           "Color": "White"
         },
         "points": [
-          "647, 85",
-          "868, 334"
+          "645, 108",
+          "956, 389"
         ],
         "color": "Black",
         "penWidth": 3.0,
         "isFeel": false
-      },
-      {
-        "$type": "PaintOOP.Figures.Polygon, PaintOOP",
-        "brush": {
-          "$type": "System.Drawing.SolidBrush, System.Drawing.Common",
-          "Color": "White"
-        },
-        "points": [
-          "137, 385",
-          "366, 253",
-          "434, 546",
-          "633, 382"
-        ],
-        "color": "Black",
-        "penWidth": 3.0,
-        "isFeel": false
-      }
-    ]
-  },
-  "redoStack": {
-    "redoStack": [
-      {
-        "$type": "PaintOOP.Figures.RegularPolygon, PaintOOP",
-        "vertices": [
-          {
-            "IsEmpty": false,
-            "X": 770.0,
-            "Y": 502.0
-          },
-          {
-            "IsEmpty": false,
-            "X": 624.1417,
-            "Y": 416.63397
-          },
-          {
-            "IsEmpty": false,
-            "X": 625.1417,
-            "Y": 247.63397
-          },
-          {
-            "IsEmpty": false,
-            "X": 772.0,
-            "Y": 164.0
-          },
-          {
-            "IsEmpty": false,
-            "X": 917.8583,
-            "Y": 249.36603
-          },
-          {
-            "IsEmpty": false,
-            "X": 916.8583,
-            "Y": 418.36603
-          }
-        ],
-        "numOfCorners": 6,
-        "brush": {
-          "$type": "System.Drawing.SolidBrush, System.Drawing.Common",
-          "Color": "128, 255, 0"
-        },
-        "points": [
-          "771, 333",
-          "770, 502"
-        ],
-        "color": "255, 128, 0",
-        "penWidth": 6.0,
-        "isFeel": true
       }
     ]
   }

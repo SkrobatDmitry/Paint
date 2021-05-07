@@ -13,7 +13,6 @@ namespace PaintOOP
     {
         [DataMember]
         public UndoRedo.UndoList undoList;
-        [DataMember]
         public UndoRedo.RedoStack redoStack;
 
         public FigureStorage()

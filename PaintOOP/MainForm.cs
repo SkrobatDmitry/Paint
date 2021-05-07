@@ -375,10 +375,6 @@ namespace PaintOOP
             {
                 UndoButton.Enabled = true;
             }
-            if (!figureStorage.redoStack.IsEmpty())
-            {
-                RedoButton.Enabled = true;
-            }
         }
         #endregion
     }

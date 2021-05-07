@@ -2,56 +2,66 @@
   "undoList": {
     "undoList": [
       {
-        "$type": "PaintOOP.Figures.BrokenLine, PaintOOP",
-        "points": [
-          "181, 114",
-          "584, 63",
-          "379, 470",
-          "874, 505"
-        ],
-        "color": "255, 128, 0",
-        "penWidth": 6.0,
-        "isFeel": true
-      },
-      {
-        "$type": "PaintOOP.Figures.Line, PaintOOP",
-        "points": [
-          "177, 337",
-          "577, 332"
-        ],
-        "color": "128, 0, 255",
-        "penWidth": 6.0,
-        "isFeel": true
-      },
-      {
-        "$type": "PaintOOP.Figures.Line, PaintOOP",
-        "points": [
-          "895, 56",
-          "926, 495"
-        ],
-        "color": "128, 0, 255",
-        "penWidth": 6.0,
-        "isFeel": true
-      },
-      {
-        "$type": "PaintOOP.Figures.Ellipse, PaintOOP",
-        "width": 299.0,
-        "height": 293.0,
+        "$type": "PaintOOP.Figures.Rectangle, PaintOOP",
+        "width": 274.0,
+        "height": 264.0,
         "brush": {
           "$type": "System.Drawing.SolidBrush, System.Drawing.Common",
-          "Color": "Aqua"
+          "Color": "White"
         },
         "points": [
-          "570, 62",
-          "869, 355"
+          "208, 139",
+          "482, 403"
         ],
-        "color": "128, 0, 255",
-        "penWidth": 2.0,
+        "color": "Black",
+        "penWidth": 3.0,
         "isFeel": false
+      },
+      {
+        "$type": "PaintOOP.Figures.Rectangle, PaintOOP",
+        "width": 311.0,
+        "height": 281.0,
+        "brush": {
+          "$type": "System.Drawing.SolidBrush, System.Drawing.Common",
+          "Color": "White"
+        },
+        "points": [
+          "645, 108",
+          "956, 389"
+        ],
+        "color": "Black",
+        "penWidth": 3.0,
+        "isFeel": false
+      },
+      {
+        "$type": "PaintOOP.Figures.BrokenLine, PaintOOP",
+        "points": [
+          "140, 70",
+          "537, 27",
+          "573, 187",
+          "113, 235",
+          "61, 151"
+        ],
+        "color": "Black",
+        "penWidth": 3.0,
+        "isFeel": true
+      },
+      {
+        "$type": "PaintOOP.Figures.Polygon, PaintOOP",
+        "brush": {
+          "$type": "System.Drawing.SolidBrush, System.Drawing.Common",
+          "Color": "Red"
+        },
+        "points": [
+          "562, 476",
+          "703, 237",
+          "705, 595",
+          "563, 593"
+        ],
+        "color": "Black",
+        "penWidth": 3.0,
+        "isFeel": true
       }
     ]
-  },
-  "redoStack": {
-    "redoStack": []
   }
 }
