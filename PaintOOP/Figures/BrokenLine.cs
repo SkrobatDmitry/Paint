@@ -4,9 +4,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.Serialization;
 
 namespace PaintOOP.Figures
 {
+    [DataContract]
     class BrokenLine : Figure
     {
         #region BrokenLine Constructor's
@@ -27,6 +29,11 @@ namespace PaintOOP.Figures
 
         public override void Draw(Graphics graphics)
         {
+            if (pen ==  null)
+            {
+                SetPen();
+            }
+
             graphics.DrawLines(pen, points);
         }
     }

@@ -4,16 +4,21 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.Serialization;
 
 namespace PaintOOP.Figures
 {
+    [DataContract]
     public class RegularPolygon : Figure
     {
         #region RegularPolygon Variable's
+        [DataMember]
         private PointF[] vertices;
 
+        [DataMember]
         public int numOfCorners;
 
+        [DataMember]
         private Brush brush;
         #endregion
 
@@ -41,6 +46,11 @@ namespace PaintOOP.Figures
 
         public override void Draw(Graphics graphics)
         {
+            if (pen == null)
+            {
+                SetPen();
+            }
+
             vertices = new PointF[numOfCorners];
             vertices[0] = points[1];
 

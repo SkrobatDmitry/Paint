@@ -4,15 +4,20 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.Serialization;
 
 namespace PaintOOP.Figures
 {
+    [DataContract]
     public class Rectangle : Figure
     {
         #region Rectangle Variable's
+        [DataMember]
         private float width;
+        [DataMember]
         private float height;
 
+        [DataMember]
         private Brush brush;
         #endregion
 
@@ -40,6 +45,11 @@ namespace PaintOOP.Figures
 
         public override void Draw(Graphics graphics)
         {
+            if (pen == null)
+            {
+                SetPen();
+            }
+
             Point leftCorner = new Point(Math.Min(points[0].X, points[1].X), Math.Min(points[0].Y, points[1].Y));
             Point rightCorner = new Point(Math.Max(points[0].X, points[1].X), Math.Max(points[0].Y, points[1].Y));
 

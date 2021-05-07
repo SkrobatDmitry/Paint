@@ -13,7 +13,11 @@ namespace PaintOOP
     public partial class MainForm : Form
     {
         #region Variable Declaration
-        private UndoRedo.FigureStorage figureStorage;
+        private FigureStorage figureStorage;
+
+        private Serializer serializer;
+
+        private Bitmap bitmap;
 
         private Figure currentFigure;
         private ICreator currentCreator;
@@ -30,14 +34,16 @@ namespace PaintOOP
         private Boolean isDrawing;
         private Boolean isFeel;
 
-        private List<Point> points;
+        private List<Point> points;        
         #endregion
 
         public MainForm()
         {
             InitializeComponent();
 
-            figureStorage = new UndoRedo.FigureStorage();
+            figureStorage = new FigureStorage();
+
+            serializer = new Serializer();
 
             color = Color.Black;
             fillColor = Color.White;
@@ -50,7 +56,7 @@ namespace PaintOOP
 
             points = new List<Point>();
 
-            Bitmap bitmap = new Bitmap(PictureBox.Width, PictureBox.Height);
+            bitmap = new Bitmap(PictureBox.Width, PictureBox.Height);
             PictureBox.Image = bitmap;
         }
 
@@ -60,7 +66,7 @@ namespace PaintOOP
             currentCreator = new Figures.LineCreator();
             currentFigure = currentCreator.Create(color, fillColor, penWidth);
 
-            stateChange(currentCreator);
+            StateChange(currentCreator);
         }
 
         private void RectangleButton_Click(object sender, EventArgs e)
@@ -68,7 +74,7 @@ namespace PaintOOP
             currentCreator = new Figures.RectangleCreator();
             currentFigure = currentCreator.Create(color, fillColor, penWidth);
 
-            stateChange(currentCreator);
+            StateChange(currentCreator);
         }
 
         private void EllipseButton_Click(object sender, EventArgs e)
@@ -76,7 +82,7 @@ namespace PaintOOP
             currentCreator = new Figures.EllipseCreator();
             currentFigure = currentCreator.Create(color, fillColor, penWidth);
 
-            stateChange(currentCreator);
+            StateChange(currentCreator);
         }
 
         private void PolygonButton_Click(object sender, EventArgs e)
@@ -84,7 +90,7 @@ namespace PaintOOP
             currentCreator = new Figures.PolygonCreator();
             currentFigure = currentCreator.Create(color, fillColor, penWidth);
 
-            stateChange(currentCreator);
+            StateChange(currentCreator);
         }
 
         private void RegularPolygonButton_Click(object sender, EventArgs e)
@@ -93,7 +99,7 @@ namespace PaintOOP
             currentFigure = currentCreator.Create(color, fillColor, penWidth);
 
             (currentFigure as Figures.RegularPolygon).numOfCorners = cornersNum;
-            stateChange(currentCreator);
+            StateChange(currentCreator);
         }
 
         private void BrokenLineButton_Click(object sender, EventArgs e)
@@ -101,7 +107,7 @@ namespace PaintOOP
             currentCreator = new Figures.BrokenLineCreator();
             currentFigure = currentCreator.Create(color, fillColor, penWidth);
 
-            stateChange(currentCreator);
+            StateChange(currentCreator);
         }
         #endregion
 
@@ -115,7 +121,8 @@ namespace PaintOOP
                 
                 if (currentFigure != null)
                 {
-                    currentFigure.pen = new Pen(color, penWidth);
+                    currentFigure.color = color;
+                    currentFigure.SetPen();
                 }
             }
         }
@@ -128,7 +135,7 @@ namespace PaintOOP
                 fillColor = ColorDialog.Color;
             }
 
-            if ((currentFigure != null) && isFeelCheck.Enabled)
+            if ((currentFigure != null) && IsFeelCheck.Enabled)
             {
                 if (currentCreator.isVariableAngles)
                 {
@@ -149,7 +156,8 @@ namespace PaintOOP
 
             if (currentFigure != null)
             {
-                currentFigure.pen = new Pen(color, penWidth);
+                currentFigure.penWidth = penWidth;
+                currentFigure.SetPen();
             }
 
             PenWidthLabel.Text = "Pen Width: " + penWidth.ToString();
@@ -278,9 +286,9 @@ namespace PaintOOP
         }
 
         #region Button's Action
-        private void isFeelCheck_CheckedChanged(object sender, EventArgs e)
+        private void IsFeelCheck_CheckedChanged(object sender, EventArgs e)
         {
-            if (isFeelCheck.Checked)
+            if (IsFeelCheck.Checked)
             {
                 isFeel = true;
             }
@@ -290,15 +298,15 @@ namespace PaintOOP
             }
         }
 
-        private void stateChange(ICreator creator)
+        private void StateChange(ICreator creator)
         {
             if (creator.isCanFeel)
             {
-                isFeelCheck.Enabled = true;
+                IsFeelCheck.Enabled = true;
             }
             else
             {
-                isFeelCheck.Enabled = false;
+                IsFeelCheck.Enabled = false;
             }
 
             if (creator.isVariableAngles)
@@ -349,6 +357,28 @@ namespace PaintOOP
         private void MainForm_HelpButtonClicked(object sender, CancelEventArgs e)
         {
             MessageBox.Show("Многоугольник | Ломанная :\nЛКМ - поставить новую точку\nПКМ - поставить последнюю точку\n\nОстальные фигуры :\nЛКМ - начать рисование\nОтпустить ЛКМ - закончить рисование", "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        #endregion
+
+        #region De|Serialize Button's Action
+        private void SerializerButton_Click(object sender, EventArgs e)
+        {
+            serializer.Serialize(figureStorage);
+        }
+
+        private void DeserializerButton_Click(object sender, EventArgs e)
+        {
+            figureStorage = serializer.Deserialize(figureStorage);
+            PictureBox.Refresh();
+
+            if (!figureStorage.undoList.IsEmpty())
+            {
+                UndoButton.Enabled = true;
+            }
+            if (!figureStorage.redoStack.IsEmpty())
+            {
+                RedoButton.Enabled = true;
+            }
         }
         #endregion
     }

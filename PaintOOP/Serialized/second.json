@@ -1,0 +1,57 @@
+{
+  "undoList": {
+    "undoList": [
+      {
+        "$type": "PaintOOP.Figures.BrokenLine, PaintOOP",
+        "points": [
+          "181, 114",
+          "584, 63",
+          "379, 470",
+          "874, 505"
+        ],
+        "color": "255, 128, 0",
+        "penWidth": 6.0,
+        "isFeel": true
+      },
+      {
+        "$type": "PaintOOP.Figures.Line, PaintOOP",
+        "points": [
+          "177, 337",
+          "577, 332"
+        ],
+        "color": "128, 0, 255",
+        "penWidth": 6.0,
+        "isFeel": true
+      },
+      {
+        "$type": "PaintOOP.Figures.Line, PaintOOP",
+        "points": [
+          "895, 56",
+          "926, 495"
+        ],
+        "color": "128, 0, 255",
+        "penWidth": 6.0,
+        "isFeel": true
+      },
+      {
+        "$type": "PaintOOP.Figures.Ellipse, PaintOOP",
+        "width": 299.0,
+        "height": 293.0,
+        "brush": {
+          "$type": "System.Drawing.SolidBrush, System.Drawing.Common",
+          "Color": "Aqua"
+        },
+        "points": [
+          "570, 62",
+          "869, 355"
+        ],
+        "color": "128, 0, 255",
+        "penWidth": 2.0,
+        "isFeel": false
+      }
+    ]
+  },
+  "redoStack": {
+    "redoStack": []
+  }
+}

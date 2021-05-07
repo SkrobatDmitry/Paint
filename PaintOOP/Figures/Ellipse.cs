@@ -4,15 +4,20 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.Serialization;
 
 namespace PaintOOP.Figures
 {
+    [DataContract]
     public class Ellipse : Figure
     {
         #region Ellipse Variable's
+        [DataMember]
         private float width;
+        [DataMember]
         private float height;
 
+        [DataMember]
         private Brush brush;
         #endregion
         
@@ -40,6 +45,11 @@ namespace PaintOOP.Figures
 
         public override void Draw(Graphics graphics)
         {
+            if (pen == null)
+            {
+                SetPen();
+            }
+
             width = points[1].X - points[0].X;
             height = points[1].Y - points[0].Y;
 

@@ -32,12 +32,14 @@ namespace PaintOOP
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.PictureBox = new System.Windows.Forms.PictureBox();
             this.ControlPanel = new System.Windows.Forms.Panel();
+            this.DeserializerButton = new System.Windows.Forms.Button();
+            this.SerializerButton = new System.Windows.Forms.Button();
             this.RedoButton = new System.Windows.Forms.Button();
             this.UndoButton = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
             this.CornersTrackBar = new System.Windows.Forms.TrackBar();
             this.PenWidthTrackBar = new System.Windows.Forms.TrackBar();
-            this.isFeelCheck = new System.Windows.Forms.CheckBox();
+            this.IsFeelCheck = new System.Windows.Forms.CheckBox();
             this.RegularPolygonButton = new System.Windows.Forms.Button();
             this.CornersNumLabel = new System.Windows.Forms.Label();
             this.PenWidthLabel = new System.Windows.Forms.Label();
@@ -72,12 +74,14 @@ namespace PaintOOP
             // ControlPanel
             // 
             this.ControlPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(215)))), ((int)(((byte)(220)))));
+            this.ControlPanel.Controls.Add(this.DeserializerButton);
+            this.ControlPanel.Controls.Add(this.SerializerButton);
             this.ControlPanel.Controls.Add(this.RedoButton);
             this.ControlPanel.Controls.Add(this.UndoButton);
             this.ControlPanel.Controls.Add(this.ClearButton);
             this.ControlPanel.Controls.Add(this.CornersTrackBar);
             this.ControlPanel.Controls.Add(this.PenWidthTrackBar);
-            this.ControlPanel.Controls.Add(this.isFeelCheck);
+            this.ControlPanel.Controls.Add(this.IsFeelCheck);
             this.ControlPanel.Controls.Add(this.RegularPolygonButton);
             this.ControlPanel.Controls.Add(this.CornersNumLabel);
             this.ControlPanel.Controls.Add(this.PenWidthLabel);
@@ -93,6 +97,24 @@ namespace PaintOOP
             this.ControlPanel.ForeColor = System.Drawing.SystemColors.ControlText;
             resources.ApplyResources(this.ControlPanel, "ControlPanel");
             this.ControlPanel.Name = "ControlPanel";
+            // 
+            // DeserializerButton
+            // 
+            this.DeserializerButton.BackColor = System.Drawing.Color.White;
+            this.DeserializerButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.DeserializerButton, "DeserializerButton");
+            this.DeserializerButton.Name = "DeserializerButton";
+            this.DeserializerButton.UseVisualStyleBackColor = false;
+            this.DeserializerButton.Click += new System.EventHandler(this.DeserializerButton_Click);
+            // 
+            // SerializerButton
+            // 
+            this.SerializerButton.BackColor = System.Drawing.Color.White;
+            this.SerializerButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.SerializerButton, "SerializerButton");
+            this.SerializerButton.Name = "SerializerButton";
+            this.SerializerButton.UseVisualStyleBackColor = false;
+            this.SerializerButton.Click += new System.EventHandler(this.SerializerButton_Click);
             // 
             // RedoButton
             // 
@@ -137,12 +159,12 @@ namespace PaintOOP
             this.PenWidthTrackBar.Value = 3;
             this.PenWidthTrackBar.Scroll += new System.EventHandler(this.PenWidthTrackBar_Scroll);
             // 
-            // isFeelCheck
+            // IsFeelCheck
             // 
-            resources.ApplyResources(this.isFeelCheck, "isFeelCheck");
-            this.isFeelCheck.Name = "isFeelCheck";
-            this.isFeelCheck.UseVisualStyleBackColor = true;
-            this.isFeelCheck.CheckedChanged += new System.EventHandler(this.isFeelCheck_CheckedChanged);
+            resources.ApplyResources(this.IsFeelCheck, "IsFeelCheck");
+            this.IsFeelCheck.Name = "IsFeelCheck";
+            this.IsFeelCheck.UseVisualStyleBackColor = true;
+            this.IsFeelCheck.CheckedChanged += new System.EventHandler(this.IsFeelCheck_CheckedChanged);
             // 
             // RegularPolygonButton
             // 
@@ -270,12 +292,14 @@ namespace PaintOOP
         private System.Windows.Forms.Label CornersNumLabel;
         private System.Windows.Forms.Label PenWidthLabel;
         private System.Windows.Forms.Button RegularPolygonButton;
-        private System.Windows.Forms.CheckBox isFeelCheck;
+        private System.Windows.Forms.CheckBox IsFeelCheck;
         private System.Windows.Forms.TrackBar PenWidthTrackBar;
         private System.Windows.Forms.TrackBar CornersTrackBar;
         private System.Windows.Forms.Button ClearButton;
         private System.Windows.Forms.Button RedoButton;
         private System.Windows.Forms.Button UndoButton;
+        private System.Windows.Forms.Button SerializerButton;
+        private System.Windows.Forms.Button DeserializerButton;
     }
 }
 

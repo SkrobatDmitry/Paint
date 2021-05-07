@@ -4,11 +4,14 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.Serialization;
 
 namespace PaintOOP.Figures
 {
+    [DataContract]
     public class Polygon : Figure
     {
+        [DataMember]
         private Brush brush;
 
         #region Polygon Constructor's
@@ -27,6 +30,11 @@ namespace PaintOOP.Figures
 
         public override void Draw(Graphics graphics)
         {
+            if (pen == null)
+            {
+                SetPen();
+            }
+
             if (isFeel)
             {
                 graphics.FillPolygon(brush, points);

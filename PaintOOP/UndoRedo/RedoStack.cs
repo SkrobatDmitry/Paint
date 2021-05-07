@@ -4,11 +4,14 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.Serialization;
 
 namespace PaintOOP.UndoRedo
 {
+    [DataContract]
     public class RedoStack
     {
+        [DataMember]
         private Stack<Figure> redoStack;
 
         public RedoStack()
