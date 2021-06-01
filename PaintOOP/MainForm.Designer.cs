@@ -32,7 +32,9 @@ namespace PaintOOP
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.PictureBox = new System.Windows.Forms.PictureBox();
             this.ControlPanel = new System.Windows.Forms.Panel();
+            this.PluginComboBox = new System.Windows.Forms.ComboBox();
             this.DeserializerButton = new System.Windows.Forms.Button();
+            this.PluginButton = new System.Windows.Forms.Button();
             this.SerializerButton = new System.Windows.Forms.Button();
             this.RedoButton = new System.Windows.Forms.Button();
             this.UndoButton = new System.Windows.Forms.Button();
@@ -74,7 +76,9 @@ namespace PaintOOP
             // ControlPanel
             // 
             this.ControlPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(215)))), ((int)(((byte)(220)))));
+            this.ControlPanel.Controls.Add(this.PluginComboBox);
             this.ControlPanel.Controls.Add(this.DeserializerButton);
+            this.ControlPanel.Controls.Add(this.PluginButton);
             this.ControlPanel.Controls.Add(this.SerializerButton);
             this.ControlPanel.Controls.Add(this.RedoButton);
             this.ControlPanel.Controls.Add(this.UndoButton);
@@ -98,6 +102,14 @@ namespace PaintOOP
             resources.ApplyResources(this.ControlPanel, "ControlPanel");
             this.ControlPanel.Name = "ControlPanel";
             // 
+            // PluginComboBox
+            // 
+            this.PluginComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.PluginComboBox, "PluginComboBox");
+            this.PluginComboBox.FormattingEnabled = true;
+            this.PluginComboBox.Name = "PluginComboBox";
+            this.PluginComboBox.SelectedIndexChanged += new System.EventHandler(this.PluginComboBox_SelectedIndexChanged);
+            // 
             // DeserializerButton
             // 
             this.DeserializerButton.BackColor = System.Drawing.Color.White;
@@ -106,6 +118,15 @@ namespace PaintOOP
             this.DeserializerButton.Name = "DeserializerButton";
             this.DeserializerButton.UseVisualStyleBackColor = false;
             this.DeserializerButton.Click += new System.EventHandler(this.DeserializerButton_Click);
+            // 
+            // PluginButton
+            // 
+            this.PluginButton.BackColor = System.Drawing.Color.White;
+            this.PluginButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.PluginButton, "PluginButton");
+            this.PluginButton.Name = "PluginButton";
+            this.PluginButton.UseVisualStyleBackColor = false;
+            this.PluginButton.Click += new System.EventHandler(this.PluginButton_Click);
             // 
             // SerializerButton
             // 
@@ -300,6 +321,8 @@ namespace PaintOOP
         private System.Windows.Forms.Button UndoButton;
         private System.Windows.Forms.Button SerializerButton;
         private System.Windows.Forms.Button DeserializerButton;
+        private System.Windows.Forms.Button PluginButton;
+        private System.Windows.Forms.ComboBox PluginComboBox;
     }
 }
 

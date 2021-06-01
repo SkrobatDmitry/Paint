@@ -66,7 +66,7 @@
     <value>152, 12</value>
   </data>
   <data name="PictureBox.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>1100, 650</value>
+    <value>1100, 690</value>
   </data>
   <assembly alias="System.Private.CoreLib" name="System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
   <data name="PictureBox.TabIndex" type="System.Int32, System.Private.CoreLib">
@@ -84,10 +84,37 @@
   <data name="&gt;&gt;PictureBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="PluginComboBox.Enabled" type="System.Boolean, System.Private.CoreLib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=5.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+  <data name="PluginComboBox.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI Semibold, 7.8pt, style=Bold</value>
+  </data>
+  <data name="PluginComboBox.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>15, 516</value>
+  </data>
+  <data name="PluginComboBox.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>110, 25</value>
+  </data>
+  <data name="PluginComboBox.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;PluginComboBox.Name" xml:space="preserve">
+    <value>PluginComboBox</value>
+  </data>
+  <data name="&gt;&gt;PluginComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=5.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PluginComboBox.Parent" xml:space="preserve">
+    <value>ControlPanel</value>
+  </data>
+  <data name="&gt;&gt;PluginComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="DeserializerButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=5.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
   <data name="DeserializerButton.Font" type="System.Drawing.Font, System.Drawing.Common">
     <value>Segoe UI Semibold, 9pt, style=Bold</value>
   </data>
@@ -95,7 +122,7 @@
     <value>NoControl</value>
   </data>
   <data name="DeserializerButton.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>15, 558</value>
+    <value>15, 598</value>
   </data>
   <data name="DeserializerButton.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>110, 30</value>
@@ -104,7 +131,7 @@
     <value>19</value>
   </data>
   <data name="DeserializerButton.Text" xml:space="preserve">
-    <value>Deserialize</value>
+    <value>Deserealize</value>
   </data>
   <data name="&gt;&gt;DeserializerButton.Name" xml:space="preserve">
     <value>DeserializerButton</value>
@@ -116,7 +143,40 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;DeserializerButton.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
+  </data>
+  <data name="PluginButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="PluginButton.Font" type="System.Drawing.Font, System.Drawing.Common">
+    <value>Segoe UI Semibold, 9pt, style=Bold</value>
+  </data>
+  <data name="PluginButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PluginButton.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>15, 480</value>
+  </data>
+  <data name="PluginButton.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>110, 30</value>
+  </data>
+  <data name="PluginButton.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>21</value>
+  </data>
+  <data name="PluginButton.Text" xml:space="preserve">
+    <value>New plugin</value>
+  </data>
+  <data name="&gt;&gt;PluginButton.Name" xml:space="preserve">
+    <value>PluginButton</value>
+  </data>
+  <data name="&gt;&gt;PluginButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.3.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PluginButton.Parent" xml:space="preserve">
+    <value>ControlPanel</value>
+  </data>
+  <data name="&gt;&gt;PluginButton.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="SerializerButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -125,7 +185,7 @@
     <value>Segoe UI Semibold, 9pt, style=Bold</value>
   </data>
   <data name="SerializerButton.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>15, 522</value>
+    <value>15, 562</value>
   </data>
   <data name="SerializerButton.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>110, 30</value>
@@ -134,7 +194,7 @@
     <value>18</value>
   </data>
   <data name="SerializerButton.Text" xml:space="preserve">
-    <value>Serialize</value>
+    <value>Serealize</value>
   </data>
   <data name="&gt;&gt;SerializerButton.Name" xml:space="preserve">
     <value>SerializerButton</value>
@@ -146,7 +206,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;SerializerButton.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="RedoButton.Enabled" type="System.Boolean, System.Private.CoreLib">
     <value>False</value>
@@ -161,7 +221,7 @@
     <value>NoControl</value>
   </data>
   <data name="RedoButton.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>75, 594</value>
+    <value>75, 634</value>
   </data>
   <data name="RedoButton.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>50, 30</value>
@@ -182,7 +242,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;RedoButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="UndoButton.Enabled" type="System.Boolean, System.Private.CoreLib">
     <value>False</value>
@@ -197,7 +257,7 @@
     <value>NoControl</value>
   </data>
   <data name="UndoButton.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>15, 594</value>
+    <value>15, 634</value>
   </data>
   <data name="UndoButton.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>50, 30</value>
@@ -218,7 +278,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;UndoButton.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="ClearButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -230,7 +290,7 @@
     <value>NoControl</value>
   </data>
   <data name="ClearButton.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>15, 630</value>
+    <value>15, 670</value>
   </data>
   <data name="ClearButton.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>110, 30</value>
@@ -251,7 +311,10 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;ClearButton.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
+  </data>
+  <data name="CornersTrackBar.Enabled" type="System.Boolean, System.Private.CoreLib">
+    <value>False</value>
   </data>
   <data name="CornersTrackBar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -265,9 +328,6 @@
   <data name="CornersTrackBar.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>14</value>
   </data>
-  <data name="CornersTrackBar.Visible" type="System.Boolean, System.Private.CoreLib">
-    <value>False</value>
-  </data>
   <data name="&gt;&gt;CornersTrackBar.Name" xml:space="preserve">
     <value>CornersTrackBar</value>
   </data>
@@ -278,7 +338,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;CornersTrackBar.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="PenWidthTrackBar.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>8, 352</value>
@@ -299,7 +359,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;PenWidthTrackBar.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="IsFeelCheck.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
@@ -329,7 +389,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;IsFeelCheck.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="RegularPolygonButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -422,7 +482,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;RegularPolygonButton.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="CornersNumLabel.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
@@ -445,9 +505,6 @@
   <data name="CornersNumLabel.Text" xml:space="preserve">
     <value>Corners Num: 3</value>
   </data>
-  <data name="CornersNumLabel.Visible" type="System.Boolean, System.Private.CoreLib">
-    <value>False</value>
-  </data>
   <data name="&gt;&gt;CornersNumLabel.Name" xml:space="preserve">
     <value>CornersNumLabel</value>
   </data>
@@ -458,7 +515,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;CornersNumLabel.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="PenWidthLabel.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
@@ -491,7 +548,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;PenWidthLabel.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="SecondColorLabel.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
@@ -524,7 +581,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;SecondColorLabel.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="FirstColorLabel.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
@@ -554,7 +611,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;FirstColorLabel.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="SecondColorButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -581,7 +638,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;SecondColorButton.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="FirstColorButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -605,7 +662,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;FirstColorButton.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="BrokenLineButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -698,7 +755,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;BrokenLineButton.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="PolygonButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -795,7 +852,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;PolygonButton.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
   </data>
   <data name="EllipseButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -889,7 +946,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;EllipseButton.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>19</value>
   </data>
   <data name="RectangleButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -975,7 +1032,7 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;RectangleButton.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>20</value>
   </data>
   <data name="LineButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1057,13 +1114,13 @@
     <value>ControlPanel</value>
   </data>
   <data name="&gt;&gt;LineButton.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>21</value>
   </data>
   <data name="ControlPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>0, 0</value>
   </data>
   <data name="ControlPanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>140, 675</value>
+    <value>140, 717</value>
   </data>
   <data name="ControlPanel.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>1</value>
@@ -1087,7 +1144,7 @@
     <value>8, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>1262, 673</value>
+    <value>1262, 713</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

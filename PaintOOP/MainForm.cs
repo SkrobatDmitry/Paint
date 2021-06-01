@@ -17,6 +17,9 @@ namespace PaintOOP
 
         private Serializer serializer;
 
+        private Plugin plugin;
+        private Type currentFactory;
+
         private Bitmap bitmap;
 
         private Figure currentFigure;
@@ -44,6 +47,8 @@ namespace PaintOOP
             figureStorage = new FigureStorage();
 
             serializer = new Serializer();
+
+            plugin = new Plugin();
 
             color = Color.Black;
             fillColor = Color.White;
@@ -311,13 +316,11 @@ namespace PaintOOP
 
             if (creator.isVariableAngles)
             {
-                CornersTrackBar.Visible = true;
-                CornersNumLabel.Visible = true;
+                CornersTrackBar.Enabled = true;
             }
             else
             {
-                CornersTrackBar.Visible = false;
-                CornersNumLabel.Visible = false;
+                CornersTrackBar.Enabled = false;
             }
         }
 
@@ -375,7 +378,36 @@ namespace PaintOOP
             {
                 UndoButton.Enabled = true;
             }
+            if (!figureStorage.redoStack.IsEmpty())
+            {
+                RedoButton.Enabled = true;
+            }
         }
         #endregion
+
+        private void PluginButton_Click(object sender, EventArgs e)
+        {
+            string pluginName = plugin.Load();
+
+            if (pluginName != "")
+            {
+                PluginComboBox.Items.Add(pluginName);
+                if (!PluginComboBox.Enabled)
+                {
+                    PluginComboBox.Enabled = true;
+                }
+            }
+        }
+
+        private void PluginComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string pluginName = PluginComboBox.GetItemText(PluginComboBox.SelectedItem);
+
+            currentFactory = plugin.GetPluginType(pluginName);
+            currentCreator = (ICreator)Activator.CreateInstance(currentFactory);
+            currentFigure = currentCreator.Create(color, fillColor, penWidth);
+            
+            StateChange(currentCreator);
+        }
     }
 }
